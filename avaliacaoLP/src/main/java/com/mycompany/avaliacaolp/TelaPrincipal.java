@@ -63,33 +63,34 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "CPU", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(51, 255, 255))); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Disco", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(51, 51, 51))); // NOI18N
         jPanel1.setForeground(new java.awt.Color(204, 204, 204));
 
-        jLabel1.setForeground(new java.awt.Color(0, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setText("1.5GHz");
 
-        lbCpu.setForeground(new java.awt.Color(51, 255, 255));
+        lbCpu.setForeground(new java.awt.Color(51, 51, 51));
         lbCpu.setText("...");
 
-        jLabel3.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
         jLabel3.setText("Máximo: ");
 
-        jLabel4.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
         jLabel4.setText("Mínimo: ");
 
-        jLabel5.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(51, 51, 51));
         jLabel5.setText("Média: ");
 
-        lbMaxCpu.setForeground(new java.awt.Color(51, 255, 255));
+        lbMaxCpu.setForeground(new java.awt.Color(51, 51, 51));
         lbMaxCpu.setText("...");
 
-        lbMinCpu.setForeground(new java.awt.Color(51, 255, 255));
+        lbMinCpu.setForeground(new java.awt.Color(51, 51, 51));
         lbMinCpu.setText("...");
 
-        lbMediaCpu.setForeground(new java.awt.Color(0, 255, 255));
+        lbMediaCpu.setForeground(new java.awt.Color(51, 51, 51));
         lbMediaCpu.setText("...");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -140,32 +141,32 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Disco", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(51, 255, 255))); // NOI18N
+        jPanel2.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Disco", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(51, 51, 51))); // NOI18N
         jPanel2.setForeground(new java.awt.Color(204, 204, 204));
 
-        jLabel9.setForeground(new java.awt.Color(0, 255, 255));
+        jLabel9.setForeground(new java.awt.Color(51, 51, 51));
         jLabel9.setText("465GB");
 
-        lbDisco.setForeground(new java.awt.Color(51, 255, 255));
+        lbDisco.setForeground(new java.awt.Color(51, 51, 51));
         lbDisco.setText("...");
 
-        jLabel11.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel11.setForeground(new java.awt.Color(51, 51, 51));
         jLabel11.setText("Máximo: ");
 
-        jLabel12.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel12.setForeground(new java.awt.Color(51, 51, 51));
         jLabel12.setText("Mínimo: ");
 
-        jLabel13.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel13.setForeground(new java.awt.Color(51, 51, 51));
         jLabel13.setText("Média: ");
 
-        lbMaxDisco.setForeground(new java.awt.Color(51, 255, 255));
+        lbMaxDisco.setForeground(new java.awt.Color(51, 51, 51));
         lbMaxDisco.setText("...");
 
-        lbMinDisco.setForeground(new java.awt.Color(51, 255, 255));
+        lbMinDisco.setForeground(new java.awt.Color(51, 51, 51));
         lbMinDisco.setText("...");
 
-        lbMediaDisco.setForeground(new java.awt.Color(0, 255, 255));
+        lbMediaDisco.setForeground(new java.awt.Color(51, 51, 51));
         lbMediaDisco.setText("...");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -216,32 +217,32 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Memória", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(51, 255, 255))); // NOI18N
+        jPanel3.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Disco", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(51, 51, 51))); // NOI18N
         jPanel3.setForeground(new java.awt.Color(204, 204, 204));
 
-        jLabel17.setForeground(new java.awt.Color(0, 255, 255));
+        jLabel17.setForeground(new java.awt.Color(51, 51, 51));
         jLabel17.setText("2.0GB");
 
-        lbMemoria.setForeground(new java.awt.Color(51, 255, 255));
+        lbMemoria.setForeground(new java.awt.Color(51, 51, 51));
         lbMemoria.setText("...");
 
-        jLabel19.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel19.setForeground(new java.awt.Color(51, 51, 51));
         jLabel19.setText("Máximo: ");
 
-        jLabel20.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel20.setForeground(new java.awt.Color(51, 51, 51));
         jLabel20.setText("Mínimo: ");
 
-        jLabel21.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel21.setForeground(new java.awt.Color(51, 51, 51));
         jLabel21.setText("Média: ");
 
-        lbMaxMemoria.setForeground(new java.awt.Color(51, 255, 255));
+        lbMaxMemoria.setForeground(new java.awt.Color(51, 51, 51));
         lbMaxMemoria.setText("...");
 
-        lbMinMemoria.setForeground(new java.awt.Color(51, 255, 255));
+        lbMinMemoria.setForeground(new java.awt.Color(51, 51, 51));
         lbMinMemoria.setText("...");
 
-        lbMediaMemoria.setForeground(new java.awt.Color(0, 255, 255));
+        lbMediaMemoria.setForeground(new java.awt.Color(51, 51, 51));
         lbMediaMemoria.setText("...");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
