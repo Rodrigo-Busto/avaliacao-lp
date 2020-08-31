@@ -7,6 +7,7 @@ package com.mycompany.avaliacaolp;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  *
@@ -339,9 +340,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-//    ArrayList<Double> cpuList = new ArrayList<Double>();
-//    ArrayList<Double> discoList = new ArrayList<Double>();
-//    ArrayList<Double> memoriaList = new ArrayList<Double>();
     
     Double cpu = 1.5;
     Double disco = 465.0;
@@ -360,36 +358,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
     Double maximo_memoria = 0.0;
     Double min_memoria = memoria;
     Double sum_memoria = 0.0;
-    
-    
-//    private Double[] analisaArray(ArrayList<Double> array){
-//        Double max=0.0, min=0.0, media=0.0, sum=0.0;
-//        for(int i=0;i<array.size();i++){
-//            double aux = array.get(i);
-//            max = aux;
-//            min = aux;
-//            if(aux>max){
-//                max = aux;
-//            }else if(aux<min){
-//                min = aux;
-//            }
-//            sum += aux;
-//        }
-//        media = sum/array.size();
-//        Double[] estatisticas = {max, min, media};
-//        return estatisticas;
-//    }
-    public String formata(Double n){
-        return String.format("%.1f", n);
-    }
+
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
 
-        Random random = new Random();
-        Double rdn_cpu = random.nextDouble() * cpu;
-        Double rdn_disco = random.nextDouble()* disco;
-        Double rdn_memoria = random.nextDouble()*memoria;
+        Double rdn_cpu = ThreadLocalRandom.current().nextDouble(cpu/10,cpu);
+        Double rdn_disco = ThreadLocalRandom.current().nextDouble(disco/10,disco);
+        Double rdn_memoria = ThreadLocalRandom.current().nextDouble(memoria/10,memoria);
         
         contador++;
         
@@ -418,15 +394,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
             min_memoria = rdn_memoria;
         }
         sum_memoria += rdn_memoria;
-        
-        
-//        cpuList.add(rdn_cpu);
-//        discoList.add(rdn_disco);
-//        memoriaList.add(rdn_memoria);
-        
-//        Double[] scpu = analisaArray(cpuList);
-//        Double[] sdisco = analisaArray(discoList);
-//        Double[] smemoria = analisaArray(memoriaList);
                 
         Double perc_cpu = (rdn_cpu*100)/cpu;
         Double perc_disco = (rdn_disco*100)/disco;
@@ -455,17 +422,26 @@ public class TelaPrincipal extends javax.swing.JFrame {
         lbMemoria.setText(String.format("%.1f%% --> %.1fGB", perc_memoria, rdn_memoria));
         
         
-        lbMaxCpu.setText(formata(maximo_cpu));
-        lbMinCpu.setText(formata(min_cpu));
-        lbMediaCpu.setText(formata(sum_cpu/contador));
+        lbMaxCpu.setText(
+                String.format("%.1f", maximo_cpu));
+        lbMinCpu.setText(
+                String.format("%.1f",min_cpu));
+        lbMediaCpu.setText(
+                String.format("%.1f",sum_cpu/contador));
         
-        lbMaxDisco.setText(formata(maximo_disco));
-        lbMinDisco.setText(formata(min_disco));
-        lbMediaDisco.setText(formata(sum_disco/contador));
+        lbMaxDisco.setText(
+                String.format("%.1f",maximo_disco));
+        lbMinDisco.setText(
+                String.format("%.1f",min_disco));
+        lbMediaDisco.setText(
+                String.format("%.1f",sum_disco/contador));
         
-        lbMaxMemoria.setText(formata(maximo_memoria));
-        lbMinMemoria.setText(formata(min_memoria));
-        lbMediaMemoria.setText(formata(sum_memoria/contador));
+        lbMaxMemoria.setText(
+                String.format("%.1f",maximo_memoria));
+        lbMinMemoria.setText(
+                String.format("%.1f",min_memoria));
+        lbMediaMemoria.setText(
+                String.format("%.1f",sum_memoria/contador));
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
